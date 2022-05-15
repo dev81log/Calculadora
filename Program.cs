@@ -29,7 +29,6 @@ namespace Program
             float valorEntrada2 = float.Parse(Console.ReadLine());
 
             float itemArit = 0;
-
             itemArit = OperacoesAritmedicas(opcoesMenu, valorEntrada1, valorEntrada2, itemArit);
         }
 
@@ -59,7 +58,6 @@ namespace Program
                 default:
                     break;
             }
-
             return itemArit;
         }
     }
