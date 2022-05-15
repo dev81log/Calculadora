@@ -6,10 +6,10 @@ namespace Program
     {
         static void Main(string[] args)
         {
-            Calculate();
+            MenuOpcoes();
         }
 
-        static void Calculate()
+        static void MenuOpcoes()
         {
             Console.Clear();
             Console.WriteLine("Escolha uma das opcoes:");
@@ -30,6 +30,11 @@ namespace Program
 
             float itemArit = 0;
 
+            itemArit = OperacoesAritmedicas(opcoesMenu, valorEntrada1, valorEntrada2, itemArit);
+        }
+
+        static float OperacoesAritmedicas(short opcoesMenu, float valorEntrada1, float valorEntrada2, float itemArit)
+        {
             switch (opcoesMenu)
             {
                 case 1:
@@ -48,10 +53,14 @@ namespace Program
                     itemArit = valorEntrada1 * valorEntrada2;
                     Console.WriteLine($"O resultado da Multiplicacao {itemArit}");
                     break;
-                case 5: System.Environment.Exit(0); break;
+                case 5:
+                    System.Environment.Exit(0);
+                    break;
                 default:
                     break;
             }
+
+            return itemArit;
         }
     }
 }
