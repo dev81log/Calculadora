@@ -1,4 +1,4 @@
-# Calculator
+# Calculadora
 
 Programa de calculos aritméticos em c# via CLI.
 
